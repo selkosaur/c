@@ -1,0 +1,122 @@
+/* standard preferences */
+:root {
+
+    --Iconsax-Size        : 20px;
+    --Iconsax-Color       : #777777;
+    /* color palettes */
+    --seasalt             : #fafbfcff;
+    --quinacridone-magenta: #824f65ff;
+    --sky-magenta         : #b27092ff;
+    --amaranth-pink       : #d398b7ff;
+    --fairy-tale          : #f4bfdbff;
+    --lavender-blush      : #ffe9f3ff;
+    --platinum            : #e1dee1ff;
+    --ash-gray            : #c3d2cfff;
+    --ash-gray-2          : #a5c6bdff;
+    --cambridge-blue      : #87baabff;
+    --mint-green          : #d9fbebff;
+    --nyanza              : #ebfbd4ff;
+    --misty-rose          : #f9ddddff;
+    --thistle             : #f7cffbff;
+    --periwinkle          : #dccefbff;
+    --jordy-blue          : #80b3ffff;
+    --jordy-blue-2        : #adc8ffff;
+    --alice-blue          : #dbeaffff;
+    --lemon-chiffon       : #fbf5ceff;
+    --old-lace            : #fff3e0ff;
+    --champagne-pink      : #ffdfccff;
+    --ash-gray            : #bfcfc9ff;
+    --timberwolf          : #d3d5caff;
+    --linen               : #f5eee3ff;
+    --linen-2             : #f0e3dbff;
+    --timberwolf-2        : #dbd2cdff;
+    --orchid-pink         : #d3acb4ff;
+    /* color palette 4 */
+    --lavender-web        : #dadce7ff;
+    --old-lace2           : #fff4e6ff;
+    --champagne-pink2     : #fee7d5ff;
+    --misty-rose2         : #f8e6e4ff;
+    --azure-web           : #e6f1f3ff;
+    --nyanza2             : #dcf2dbff;
+    /* buttons */
+    --btn-red             : #ff605c;
+    --btn-orange          : #ffbd44;
+    --btn-green           : #00ca4e;
+
+
+    /* gradients */
+    --grad-gray        : linear-gradient(to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2));
+    --grad-gray2       : linear-gradient(#ffffff, #eeeeee);
+    --grad-pinkblue    : linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    --grad-ltpinkblue  : linear-gradient(to right, #c3d7f9 0%, #eec0ff; 100%);
+    --mainfont         : "Assistant", "Source Sans Pro", "Trebuchet MS", sans-serif;
+    --linkcolor        : rgb(99, 113, 161);
+    --box-shadow-border: 1px solid rgba(167, 167, 167, 0.2);
+    --box-shadow-radius: border-radius: 15px;
+    --box-shadow-shadow: box-shadow:2px 2px 4px rgba(0, 0, 0, .05);
+}
+
+* {
+    box-sizing : border-box;
+    font-family: var(--mainfont);
+    transition : 0.5s;
+
+}
+
+html,
+html * {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Source Sans Pro", "Assistant", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width : 5px;
+    height: 5px;
+}
+
+::selection {
+    background-color: rgba(168, 178, 201, 0.4);
+}
+
+button {
+    font-family  : var(--mainfont);
+    cursor       : pointer;
+    border       : 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow   : rgba(213, 217, 217, .5) 0 2px 5px 0;
+
+    transition: transform 0.5s, border 0.5s;
+}
+
+button:active {
+    border-color: #aaaaaa;
+    box-shadow  : rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline     : 0;
+    transform   : translate(0px, 4px);
+    transition  : transform 0.1s, border 0.3s;
+}
+
+a {
+    color          : var(--linkcolor);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #aaaaaa;
+}
+
+a:visited {
+    color: rgb(129, 138, 155);
+}

@@ -1,0 +1,83 @@
+/* just to set up the style page */
+
+*{
+    box-sizing: border-box;
+    font-family: "Assistant", "Source Sans Pro", sans-serif;
+    transition: 0.5s;
+    font-size: 0.9rem;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+height: 5px;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3% 3%;
+    padding:1%;
+}
+
+#content > div{
+    width:100%;
+    min-height: 200px;
+    /* border: 0.5px solid rgb(159, 159, 159); */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#content > div::before{
+    content: attr(class);
+}
+
+#head{
+    position:fixed;
+    top:0px;
+    right:0px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 2px;
+    z-index: 99999;
+}
+
+html[data-theme='light']{
+    --bgcol : #ffffff;
+    transition: 0.9s;
+}
+html[data-theme='dark']{
+    --bgcol:linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+transition: 0.9s;
+
+}
+html[data-theme='dark'] body::-webkit-scrollbar-track{
+    background: var(--bgcol);
+}
+body{
+    background: var(--bgcol);
+    background-attachment: fixed;
+    transition: 0.9s;
+}
+
+[class^="bx"]{
+    background-color: rgba(255,255,255,0.5);
+}
+
+body ::selection{
+    background-color: inherit;
+}
+
+@media screen and (min-width: 992px) {
+  #content {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+.bx3::after, .bx12::after, div.bx19::after,.bx9::after{
+    content:'clickable';
+    font-weight:bold;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts Links -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;700&family=Karla:wght@400;500;700&family=Assistant:wght@400;500;700&display=swap">
+  <title>style ref</title>
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="box-shadow.css">
+  <link rel="stylesheet" href="misc.css">
+  <!-- scripts -->
+  <script>
+    const storedTheme =
+  localStorage.getItem("theme") ||
+  (window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light");
+if (storedTheme)
+  document.documentElement.setAttribute("data-theme", storedTheme);
+
+  window.onload = function() {
+const btns = document.querySelectorAll(".theme-toggle");
+btns.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    console.log("ehhhh");
+    let currentTheme = document.documentElement.getAttribute("data-theme");
+    let targetTheme = "light";
+
+    if (currentTheme === "light") {
+      targetTheme = "dark";
+    }
+
+    document.documentElement.setAttribute("data-theme", targetTheme);
+    localStorage.setItem("theme", targetTheme);
+  });
+});
+  }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+  <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script> -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+ </head>
+ <body class="demo sel1">
+  <section id="head" class="bx8">
+   boxes created:
+   <span class="boxcount"></span>
+   <div class="mode-tog">
+    <button class="theme-toggle bx19" title="dark/light mode" type="button">
+     dark/light mode
+     <span class="toggle"></span>
+    </button>
+   </div>
+  </section>
+  <section id="content">
+   <div class="bx1"></div>
+   <div class="bx2"></div>
+   <div class="bx3"></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div>
+    <input type="text" class="inp1" placeholder="sample input box 1">
+   </div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div>
+    <div></div>
+   </div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+  </section>
+  <script>
+    var divs = document.querySelectorAll("#content > div");
+    for(var i=0; i<divs.length; i++) {
+        let div = divs[i];
+        let num = i+1;
+        div.classList.add("bx"+num);
+        let ct = document.querySelector(".boxcount");
+        ct.innerHTML = divs.length;
+    }
+  </script>
+  <!--   <script>
+
+var pckry = new Packery( '#content', {
+  itemSelector: '.grid-item',
+  columnWidth: 60,
+  
+});
+
+pckry.getItemElements().forEach( function( itemElem ) {
+  var draggie = new Draggabilly( itemElem );
+  pckry.bindDraggabillyEvents( draggie );
+});
+  </script> -->
+ </body>
+</html>
