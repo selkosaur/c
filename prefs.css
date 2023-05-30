@@ -90,22 +90,28 @@ h6 {
     background-color: rgba(168, 178, 201, 0.4);
 }
 
+*:focus-visible {
+    outline-width: 1px;
+    outline-color: rgba(255, 255, 255, 0.6);
+    outline-style: solid;
+}
+
 button {
-    font-family  : var(--mainfont);
-    cursor       : pointer;
-    border       : 1px solid #d5d9d9;
-    border-radius: 8px;
-    box-shadow   : rgba(213, 217, 217, .5) 0 2px 5px 0;
+    font-family     : var(--mainfont);
+    cursor          : pointer;
+    border          : 1px solid #d5d9d9;
+    border-radius   : 8px;
+    /* box-shadow   : rgba(213, 217, 217, .5) 0 2px 5px 0; */
 
     transition: transform 0.5s, border 0.5s;
 }
 
 button:active {
-    border-color: #aaaaaa;
-    box-shadow  : rgba(213, 217, 217, .5) 0 2px 5px 0;
-    outline     : 0;
-    transform   : translate(0px, 4px);
-    transition  : transform 0.1s, border 0.3s;
+    border-color   : #aaaaaa;
+    /* box-shadow  : rgba(213, 217, 217, .5) 0 2px 5px 0; */
+    outline        : 0;
+    transform      : translate(0px, 4px);
+    transition     : transform 0.1s, border 0.3s;
 }
 
 a {
