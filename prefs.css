@@ -59,7 +59,7 @@
 * {
     box-sizing : border-box;
     font-family: var(--mainfont);
-    transition : color 0.5s, font-size 0.5s, padding 0.5s, margin 0.5s;
+    transition : color 0.5s, font-size 0.5s, padding 0.5s, margin 0.5s, outline 0.5s;
 
 }
 
@@ -94,6 +94,10 @@ h6 {
     outline-width: 1px;
     outline-color: rgba(255, 255, 255, 0.6);
     outline-style: solid;
+}
+
+code {
+    font-family: 'Fira Code', 'Inconsolata', 'Cascadia Code', 'Consolas', monospace;
 }
 
 button {
