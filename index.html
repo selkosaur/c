@@ -1,124 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Fonts Links -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;700&family=Karla:wght@400;500;700&family=Assistant:wght@400;500;700&display=swap">
-  <title>style ref</title>
-  <link rel="icon" href="https://img.icons8.com/office/512/paint-palette.png">
-  <!-- stylesheets -->
-  <link rel="stylesheet" href="demo.css">
-  <link rel="stylesheet" href="box-shadow.css">
-  <link rel="stylesheet" href="misc.css">
-  <!-- scripts -->
-  <script>
-    const storedTheme =
-  localStorage.getItem("theme") ||
-  (window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light");
-if (storedTheme)
-  document.documentElement.setAttribute("data-theme", storedTheme);
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts Links -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;700&family=Karla:wght@400;500;700&family=Assistant:wght@400;500;700&display=swap"
+    />
+    <title>style ref</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/2662/2662771.png"
+    />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="demo.css" />
+    <link rel="stylesheet" href="box-shadow.css" />
+    <link rel="stylesheet" href="misc.css" />
+    <link rel="stylesheet" href="scrollbars.css" />
+    <!-- scripts -->
+    <script>
+      const storedTheme =
+        localStorage.getItem("theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light");
+      if (storedTheme)
+        document.documentElement.setAttribute("data-theme", storedTheme);
 
-  window.onload = function() {
-const btns = document.querySelectorAll(".theme-toggle");
-btns.forEach((btn) => {
-  btn.addEventListener("click", function () {
-    console.log("ehhhh");
-    let currentTheme = document.documentElement.getAttribute("data-theme");
-    let targetTheme = "light";
+      window.onload = function () {
+        const btns = document.querySelectorAll(".theme-toggle");
+        btns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            console.log("ehhhh");
+            let currentTheme =
+              document.documentElement.getAttribute("data-theme");
+            let targetTheme = "light";
 
-    if (currentTheme === "light") {
-      targetTheme = "dark";
-    }
+            if (currentTheme === "light") {
+              targetTheme = "dark";
+            }
 
-    document.documentElement.setAttribute("data-theme", targetTheme);
-    localStorage.setItem("theme", targetTheme);
-  });
-});
-  }
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <!-- <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+            document.documentElement.setAttribute("data-theme", targetTheme);
+            localStorage.setItem("theme", targetTheme);
+          });
+        });
+      };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
   <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script> -->
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
- </head>
- <body class="demo sel1">
-  <section id="head" class="bx8">
-   boxes created:
-   <span class="boxcount"></span>
-   <div class="mode-tog">
-    <button class="theme-toggle bx19" title="dark/light mode" type="button">
-     dark/light mode
-     <span class="toggle"></span>
-    </button>
-   </div>
-  </section>
-  <section id="content">
-   <div class="bx1"></div>
-   <div class="bx2"></div>
-   <div class="bx3"></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div>
-    <input type="text" class="inp1" placeholder="sample input box 1">
-   </div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div>
-    <div></div>
-   </div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-  </section>
-  <script>
-    var divs = document.querySelectorAll("#content > div");
-    for(var i=0; i<divs.length; i++) {
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  </head>
+  <body class="demo sel1">
+    <section id="head" class="bx8">
+      boxes created:
+      <span class="boxcount"></span>
+      <div class="mode-tog">
+        <button class="theme-toggle bx19" title="dark/light mode" type="button">
+          dark/light mode
+          <span class="toggle"></span>
+        </button>
+      </div>
+    </section>
+    <section id="content">
+      <div class="bx1"></div>
+      <div class="bx2"></div>
+      <div class="bx3"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div>
+        <input type="text" class="inp1" placeholder="sample input box 1" />
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div>
+        <div></div>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+    <script>
+      const contentEl = document.querySelector(`#content`);
+      var divs = document.querySelectorAll("#content > div");
+      for (var i = 0; i < divs.length; i++) {
         let div = divs[i];
-        let num = i+1;
-        div.classList.add("bx"+num);
+        let num = i + 1;
+        div.classList.add("bx" + num);
         let ct = document.querySelector(".boxcount");
         ct.innerHTML = divs.length;
-    }
-  </script>
-  <!--   <script>
+      }
+
+      const scrollbardivs = [];
+      const dummytext = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+
+
+      `;
+      const uniquenames = ["skinny", "trackslider"];
+      uniquenames.forEach((scrollbar) => {
+        const div = document.createElement("div");
+        div.style.overflow = "scroll";
+        div.style.justifyContent = "start";
+        div.innerHTML = `${dummytext}`;
+        div.classList.add(`scb-${scrollbar}`);
+        scrollbardivs.push(div);
+      });
+      for (let x = 0; x < 14; x++) {
+        const div = document.createElement("div");
+        div.style.overflow = "scroll";
+        div.style.justifyContent = "start";
+        div.innerHTML = `${dummytext}`;
+        div.classList.add(`scb${x + 1}`);
+        scrollbardivs.push(div);
+      }
+      contentEl.append(...scrollbardivs);
+    </script>
+    <!--   <script>
 
 var pckry = new Packery( '#content', {
   itemSelector: '.grid-item',
@@ -131,5 +168,5 @@ pckry.getItemElements().forEach( function( itemElem ) {
   pckry.bindDraggabillyEvents( draggie );
 });
   </script> -->
- </body>
+  </body>
 </html>
