@@ -1,83 +1,128 @@
 /* just to set up the style page */
 
-*{
-    box-sizing: border-box;
-    font-family: "Assistant", "Source Sans Pro", sans-serif;
-    transition: 0.5s;
-    font-size: 0.9rem;
+* {
+    box-sizing     : border-box;
+    font-family    : "Assistant", "Source Sans Pro", sans-serif;
+    transition     : 0.5s;
+    font-size      : 0.9rem;
+    scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
-    width: 5px;
-height: 5px;
+::-webkit-scrollbar {
+    width : 5px;
+    height: 5px;
 }
 
-#content{
-    display: grid;
+button {
+    cursor: pointer;
+}
+
+#content {
+    display              : grid;
     grid-template-columns: auto auto auto;
-    gap: 3% 3%;
-    padding:1%;
+    gap                  : 4rem 3%;
+    padding              : 1%;
+    grid-template-rows   : auto;
 }
 
-#content > div{
-    width:100%;
-    min-height: 200px;
-    /* border: 0.5px solid rgb(159, 159, 159); */
-    display:flex;
-    align-items: center;
+#content>div {
+    width          : 100%;
+    min-height     : 200px;
+    /* border      : 0.5px solid rgb(159, 159, 159); */
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction : column;
+
 }
 
-#content > div::before{
+#content>div::before {
     content: attr(class);
 }
 
-#head{
-    position:fixed;
-    top:0px;
-    right:0px;
-    padding: 5px;
-    background-color: rgba(255,255,255,0.6);
-    border-radius: 2px;
-    z-index: 99999;
+#head {
+    position           : fixed;
+    top                : 0px;
+    /* right           : 0px; */
+    padding            : 5px;
+    background-color   : rgba(255, 255, 255, 0.6);
+    border-radius      : 2px;
+    z-index            : 99999;
+    display            : flex;
+    justify-content    : space-between;
+    width              : 100%
 }
 
-html[data-theme='light']{
-    --bgcol : #ffffff;
+html[data-theme='light'] {
+    --bgcol   : #ffffff;
     transition: 0.9s;
 }
-html[data-theme='dark']{
-    --bgcol:linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 
-transition: 0.9s;
+html[data-theme='dark'] {
+    --bgcol: linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+    transition: 0.9s;
 
 }
-html[data-theme='dark'] body::-webkit-scrollbar-track{
+
+html[data-theme='dark'] body::-webkit-scrollbar-track {
     background: var(--bgcol);
 }
-body{
-    background: var(--bgcol);
+
+body {
+    background           : var(--bgcol);
     background-attachment: fixed;
-    transition: 0.9s;
+    transition           : 0.9s;
+    margin               : 0;
 }
 
-[class^="bx"]{
-    background-color: rgba(255,255,255,0.5);
+[class^="bx"] {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-body ::selection{
+body ::selection {
     background-color: inherit;
 }
 
 @media screen and (min-width: 992px) {
-  #content {
-    grid-template-columns: auto auto auto auto;
-  }
+    #content {
+        grid-template-columns: auto auto auto auto;
+    }
 }
 
-.bx3::after, .bx12::after, div.bx19::after,.bx9::after{
-    content:'clickable';
-    font-weight:bold;
+.bx3::after,
+.bx12::after,
+div.bx19::after,
+.bx9::after {
+    content    : 'clickable';
+    font-weight: bold;
+}
+
+h1.section-header {
+    grid-column : 1/-1;
+    font-size   : 1.5rem;
+    margin-block: 0;
+    text-align  : center;
+    color       : transparent;
+}
+
+#content>div[class^=scb] {
+    overflow       : scroll;
+    justify-content: start;
+    max-height     : 200px;
+}
+
+nav a {
+    display         : inline-block;
+    font-weight     : bold;
+    padding         : 0.4rem 1rem;
+    text-decoration : none;
+    color           : inherit;
+    border-radius   : 1.5rem;
+    border          : 1px dashed rgb(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.388);
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
 }
