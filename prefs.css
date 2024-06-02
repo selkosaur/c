@@ -90,6 +90,10 @@ h6 {
     background-color: rgba(168, 178, 201, 0.4);
 }
 
+* {
+    outline-color: transparent;
+}
+
 *:focus-visible {
     outline-width: 1px;
     outline-color: rgba(255, 255, 255, 0.6);
@@ -98,6 +102,10 @@ h6 {
 
 code {
     font-family: 'Fira Code', 'Inconsolata', 'Cascadia Code', 'Consolas', monospace;
+}
+
+input {
+    font-family: inherit;
 }
 
 button {
