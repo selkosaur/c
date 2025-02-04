@@ -8,24 +8,24 @@
 
 .bx2 {
   border-radius: 4px;
-  border-width : 0;
-  box-shadow   : rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
 .bx3 {
-  border       : 0;
+  border: 0;
   border-radius: 8px;
-  box-shadow   : -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
+  box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
 }
 
 .bx3:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform : translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .bx3:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
-  transform : translateY(2px);
+  transform: translateY(2px);
 }
 
 .bx4 {
@@ -33,20 +33,20 @@
 }
 
 .bx5 {
-  box-shadow      : rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   background-color: rgb(250, 250, 250);
-  border-radius   : 5px;
+  border-radius: 5px;
 }
 
 .bx6,
 .bx7 {
-  border       : 1px solid rgba(0, 0, 0, .4);
+  border: 1px solid rgba(0, 0, 0, .4);
   border-bottom: 1px solid rgba(0, 0, 0, .45);
-  border-right : 1px solid rgba(0, 0, 0, .45);
-  box-shadow   : inset 2px 2px 0px 0px rgba(255, 255, 255, .2), inset -2px -2px 0px 0px rgba(0, 0, 0, .1), -1px -1px 0px 0px rgba(0, 0, 0, 0.05), 1px 1px 0px 0px rgba(255, 255, 255, .1), 2px 2px 0px 0px rgba(0, 0, 0, .06);
-  padding      : 10px 20px 10px 20px;
+  border-right: 1px solid rgba(0, 0, 0, .45);
+  box-shadow: inset 2px 2px 0px 0px rgba(255, 255, 255, .2), inset -2px -2px 0px 0px rgba(0, 0, 0, .1), -1px -1px 0px 0px rgba(0, 0, 0, 0.05), 1px 1px 0px 0px rgba(255, 255, 255, .1), 2px 2px 0px 0px rgba(0, 0, 0, .06);
+  padding: 10px 20px 10px 20px;
   border-radius: 40px;
-  margin       : 5px;
+  margin: 5px;
 }
 
 .bx6 {
@@ -62,8 +62,8 @@
 }
 
 .bx7 {
-  background-color          : rgba(251, 200, 223, .2);
-  border-bottom-left-radius : 40px;
+  background-color: rgba(251, 200, 223, .2);
+  border-bottom-left-radius: 40px;
   border-bottom-right-radius: 3px;
 }
 
@@ -72,16 +72,16 @@
 }
 
 .bx8 {
-  box-shadow   : 5px 5px 0px 3px rgba(0, 0, 0, .19), 0 0 0px rgba(0, 0, 0, .23);
+  box-shadow: 5px 5px 0px 3px rgba(0, 0, 0, .19), 0 0 0px rgba(0, 0, 0, .23);
   border-radius: 5px;
 }
 
 .bx9 {
-  border-radius  : 100%;
+  border-radius: 100%;
   /* border      : 1px solid rgba(0,0,0,.4);
     border-bottom: 1px solid rgba(0,0,0,.45);
     border-right : 1px solid rgba(0,0,0,.45); */
-  box-shadow     : inset 1px 1px 0px 0px rgba(255, 255, 255, .4), inset -1px -1px 0px 0px rgba(0, 0, 0, .1), -1px -1px 0px 0px rgba(0, 0, 0, 0.05), 1px 1px 0px 0px rgba(255, 255, 255, .1);
+  box-shadow: inset 1px 1px 0px 0px rgba(255, 255, 255, .4), inset -1px -1px 0px 0px rgba(0, 0, 0, .1), -1px -1px 0px 0px rgba(0, 0, 0, 0.05), 1px 1px 0px 0px rgba(255, 255, 255, .1);
 }
 
 .bx9:active {
@@ -92,24 +92,24 @@
 }
 
 .bx10 {
-  border       : 1px solid rgba(167, 167, 167, 0.2);
+  border: 1px solid rgba(167, 167, 167, 0.2);
   border-radius: 15px;
-  box-shadow   : 2px 2px 4px rgba(0, 0, 0, .05);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .05);
 
 }
 
 .bx11 {
-  border          : none;
-  border-radius   : 10px;
-  box-shadow      : 0 0 7px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
   background-color: rgb(250, 251, 252);
 }
 
 .bx12 {
-  border       : 0;
+  border: 0;
   border-radius: 8px;
-  box-shadow   : -10px -10px 30px 0 rgba(255, 255, 255, 0.4), 10px 10px 30px 0 #1d0dca17;
-  transition   : 0.2s;
+  box-shadow: -10px -10px 30px 0 rgba(255, 255, 255, 0.4), 10px 10px 30px 0 #1d0dca17;
+  transition: 0.2s;
 }
 
 .bx12:hover {
@@ -123,22 +123,22 @@
 
 .bx13 {
   background-color: rgba(255, 255, 255, 0.2);
-  color           : black;
-  backdrop-filter : blur(9px);
-  box-shadow      : 3px 3px gainsboro;
+  color: black;
+  backdrop-filter: blur(9px);
+  box-shadow: 3px 3px gainsboro;
 }
 
 .bx14 {
-  color           : #26323d;
-  box-shadow      : 0 0 20px 4px rgba(154, 161, 177, .15), 0 4px 80px -8px rgba(36, 40, 47, .25), 0 4px 4px -2px rgba(91, 94, 105, .15);
+  color: #26323d;
+  box-shadow: 0 0 20px 4px rgba(154, 161, 177, .15), 0 4px 80px -8px rgba(36, 40, 47, .25), 0 4px 4px -2px rgba(91, 94, 105, .15);
   background-color: #fff
 }
 
 .bx15 {
-  background-color   : #ffffff;
+  background-color: #ffffff;
   /* width           : fit-content; */
-  box-shadow         : 3px 3px #eeeeee;
-  border-radius      : 10px;
+  box-shadow: 3px 3px #eeeeee;
+  border-radius: 10px;
 }
 
 .bx16 {
@@ -146,7 +146,7 @@
 }
 
 .bx17 {
-  border       : 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
   border-radius: 5px;
 }
 
@@ -156,27 +156,27 @@
 }
 
 .bx19 {
-  border       : 1px solid #d5d9d9;
+  border: 1px solid #d5d9d9;
   border-radius: 8px;
-  box-shadow   : rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
 
   transition: transform 0.5s, border 0.5s;
 }
 
 .bx19:active {
   border-color: #aaaaaa;
-  box-shadow  : rgba(213, 217, 217, .5) 0 2px 5px 0;
-  outline     : 0;
-  transform   : translate(0px, 4px);
-  transition  : transform 0.1s, border 0.3s;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+  transform: translate(0px, 4px);
+  transition: transform 0.1s, border 0.3s;
 }
 
 .bx20 {
-  background-color       : rgba(213, 217, 217, 0.299);
-  border-top-left-radius : 20px;
+  background-color: rgba(213, 217, 217, 0.299);
+  border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  box-shadow             : 0 7px 30px -10px rgba(150, 170, 180, 0.5);
-  backdrop-filter        : blur(30px);
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  backdrop-filter: blur(30px);
 }
 
 .demo .bx20::after {
@@ -190,11 +190,11 @@
     /* rgba(213, 217, 217, .5) 0 2px 5px 0 */
   ;
   background-color: rgba(255, 255, 255, 0.477);
-  backdrop-filter : blur(30px);
+  backdrop-filter: blur(30px);
 }
 
 .bx21:last-of-type {
-  border-bottom-left-radius : 20px;
+  border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
@@ -204,67 +204,67 @@
 }
 
 .bx22 {
-  border       : 1px solid rgba(224, 224, 224, 0.5);
-  box-shadow   : rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: 1px solid rgba(224, 224, 224, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 5px;
 }
 
 .bx23 {
-  border          : 1px solid rgba(167, 167, 167, 0.2);
+  border: 1px solid rgba(167, 167, 167, 0.2);
   background-color: rgba(199, 205, 246, .2);
-  border-radius   : 20px;
-  box-shadow      : 2px 2px 4px rgba(0, 0, 0, .05);
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .05);
 
 }
 
 .bx24 {
-  border-radius : 5px;
-  box-shadow    : 2px 2px 6px -4px #999;
-  display       : flex;
-  overflow      : hidden;
-  white-space   : nowrap;
-  z-index       : 12;
-  transition    : .15s ease all;
-  border        : 1px solid #e3e3e3;
-  background    : rgba(255, 255, 255, .96);
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px -4px #999;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 12;
+  transition: .15s ease all;
+  border: 1px solid #e3e3e3;
+  background: rgba(255, 255, 255, .96);
   flex-direction: column;
-  font-family   : "Assistant", sans-serif;
-  font-size     : 12px;
+  font-family: "Assistant", sans-serif;
+  font-size: 12px;
 }
 
 .bx24 * {
   font-family: inherit;
-  font-size  : inherit;
+  font-size: inherit;
 }
 
 .bx24>*:first-child {
-  background     : #eceff1;
-  border-bottom  : 1px solid #ddd;
-  padding        : 6px;
-  display        : flex;
+  background: #eceff1;
+  border-bottom: 1px solid #ddd;
+  padding: 6px;
+  display: flex;
   justify-content: space-between;
-  width          : 100%;
-  margin-bottom  : 1px;
-  font-family    : Assistant, sans-serif;
-  font-size      : 12px;
-  text-transform : lowercase;
+  width: 100%;
+  margin-bottom: 1px;
+  font-family: Assistant, sans-serif;
+  font-size: 12px;
+  text-transform: lowercase;
 }
 
 .bx24>*:nth-child(2) {
-  display    : flex;
+  display: flex;
   align-items: center;
-  padding    : 3px;
+  padding: 3px;
 }
 
 .bx24>*:nth-child(2)>*:first-child {
-  width               : 12px;
-  height              : 12px;
+  width: 12px;
+  height: 12px;
   /*   position       : relative;
     top               : 0; */
-  margin-right        : 6px;
-  margin-left         : 6px;
-  border-radius       : 50%;
-  margin-bottom       : -3px;
+  margin-right: 6px;
+  margin-left: 6px;
+  border-radius: 50%;
+  margin-bottom: -3px;
 }
 
 .bx24>*:nth-child(2)>*:nth-child(2) {
@@ -272,7 +272,7 @@
 }
 
 .bx24>*:nth-child(2)>*:nth-child(2)>*:nth-child(2) {
-  display    : inline-block;
+  display: inline-block;
   margin-left: 5px;
   font-weight: 600;
 
@@ -281,144 +281,144 @@
 .bx25 {
   /* width: 270px;
   height: 40px; */
-  background     : #F3F6F6;
-  display        : flex;
-  align-items    : center;
+  background: #F3F6F6;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  color          : white;
+  color: white;
   text-decoration: none;
-  border-radius  : 5px;
-  position       : relative;
-  border         : 1px solid #708399;
-  padding-bottom : 5px;
-  box-shadow     : 0 8px #708399;
-  transition     : background 5s 4s;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #708399;
+  padding-bottom: 5px;
+  box-shadow: 0 8px #708399;
+  transition: background 5s 4s;
 }
 
 
 .bx25:active {
-  box-shadow      : 0 5px #708399;
-  transform       : translateY(4px);
+  box-shadow: 0 5px #708399;
+  transform: translateY(4px);
   background-color: #B9CDDA;
-  transition      : background 0s;
+  transition: background 0s;
 
 }
 
 .bx25>* {
-  color     : #708399;
-  z-index   : 2;
+  color: #708399;
+  z-index: 2;
   transition: color 1s 7s;
 }
 
 .bx25:active>* {
-  color     : white;
+  color: white;
   transition: 0s;
 }
 
 .demo .bx25::before {
-  color     : black;
+  color: black;
   transition: color 2s 7s;
-  position  : absolute;
-  z-index   : 999;
+  position: absolute;
+  z-index: 999;
 }
 
 .demo .bx25::after {
-  content   : 'ancient button!';
-  color     : black;
+  content: 'ancient button!';
+  color: black;
   transition: color 2s 7s;
-  z-index   : 999;
+  z-index: 999;
   margin-top: 40px;
 }
 
 .demo .bx25:active::before,
 .demo .bx25:active::after {
-  color     : white;
+  color: white;
   transition: color 0s
 }
 
 .bx25>div {
-  background   : linear-gradient(to left, #EEB1BF 5%, #d42dab 25%, #4d1d63 90%, #030243 100%);
-  padding      : 0px;
-  position     : absolute;
-  bottom       : 0%;
-  left         : 0px;
-  width        : 100%;
-  height       : 0%;
+  background: linear-gradient(to left, #EEB1BF 5%, #d42dab 25%, #4d1d63 90%, #030243 100%);
+  padding: 0px;
+  position: absolute;
+  bottom: 0%;
+  left: 0px;
+  width: 100%;
+  height: 0%;
   border-radius: 4px;
-  opacity      : 0;
-  transition   : width 5.75s ease-in, opacity 4s 7s, height 1s 7s, background 7s;
-  z-index      : 0;
+  opacity: 0;
+  transition: width 5.75s ease-in, opacity 4s 7s, height 1s 7s, background 7s;
+  z-index: 0;
   /* z-index   : 0, border-radius 5s 3s; */
 }
 
 .bx25:active>div {
-  width        : 0%;
-  height       : 100%;
-  transition   : 0s;
-  opacity      : 1;
-  bottom       : 0px;
+  width: 0%;
+  height: 100%;
+  transition: 0s;
+  opacity: 1;
+  bottom: 0px;
   border-radius: 100px;
-  background   : black;
+  background: black;
 }
 
 .bx26 {
-  box-shadow   : 5px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
 
 }
 
 .bx27 {
-  border          : 1px solid rgba(237, 237, 237);
-  border-radius   : 0.8em;
+  border: 1px solid rgba(237, 237, 237);
+  border-radius: 0.8em;
   background-color: rgba(255, 255, 255);
-  box-shadow      : 5px 5px 10px 0px rgba(0, 0, 0, .05);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .05);
 }
 
 .bx28 {
-  border    : 1px solid #dddddd;
+  border: 1px solid #dddddd;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .bx29 {
-  box-shadow           : rgba(0, 0, 0, 0.07)6px 6px;
-  -moz-border-radius   : 11px;
+  box-shadow: rgba(0, 0, 0, 0.07)6px 6px;
+  -moz-border-radius: 11px;
   -webkit-border-radius: 11px;
-  border-radius        : 11px;
+  border-radius: 11px;
 }
 
 .bx30 {
-  border-top-left-radius : 30px;
+  border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  box-shadow             : inset 2px 2px 0px 0px rgba(255, 255, 255, .2), inset -2px -2px 0px 0px rgba(0, 0, 0, .05), 0px 2px 0px 0px rgba(255, 255, 255, 0.2);
-  border-bottom          : 1px solid rgba(0, 0, 0, .25);
-  background-color       : #e7e7e7;
+  box-shadow: inset 2px 2px 0px 0px rgba(255, 255, 255, .2), inset -2px -2px 0px 0px rgba(0, 0, 0, .05), 0px 2px 0px 0px rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, .25);
+  background-color: #e7e7e7;
 }
 
 .bx31 {
   background-color: #ffffff;
-  border-radius   : 30px;
-  border          : 1px solid rgba(0, 0, 0, .4);
-  border-bottom   : 1px solid rgba(0, 0, 0, .45);
-  border-right    : 1px solid rgba(0, 0, 0, .45);
-  box-shadow      : inset 2px 2px 0px 0px rgba(255, 255, 255, .2), inset -2px -2px 0px 0px rgba(0, 0, 0, .1), 3px 3px 0px 0px rgba(49, 49, 49, 0.072);
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, .4);
+  border-bottom: 1px solid rgba(0, 0, 0, .45);
+  border-right: 1px solid rgba(0, 0, 0, .45);
+  box-shadow: inset 2px 2px 0px 0px rgba(255, 255, 255, .2), inset -2px -2px 0px 0px rgba(0, 0, 0, .1), 3px 3px 0px 0px rgba(49, 49, 49, 0.072);
 }
 
 .bx32 {
   border-radius: 7px;
-  background   : #f7f7f7;
-  border       : 1px solid rgba(0, 0, 0, .4);
+  background: #f7f7f7;
+  border: 1px solid rgba(0, 0, 0, .4);
   border-bottom: 1px solid rgba(0, 0, 0, .45);
-  border-right : 1px solid rgba(0, 0, 0, .45);
-  box-shadow   : inset 2px 2px 0px 0px rgba(255, 255, 255, .2), inset -2px -2px 0px 0px rgba(0, 0, 0, .1), 3px 3px 0px 0px rgba(0, 0, 0, .072);
-  padding      : 11px;
-  transition   : 0.09s;
+  border-right: 1px solid rgba(0, 0, 0, .45);
+  box-shadow: inset 2px 2px 0px 0px rgba(255, 255, 255, .2), inset -2px -2px 0px 0px rgba(0, 0, 0, .1), 3px 3px 0px 0px rgba(0, 0, 0, .072);
+  padding: 11px;
+  transition: 0.09s;
 }
 
 .bx32:active {
-  box-shadow : inset -2px -2px 0px 0px rgba(255, 255, 255, .2), inset 2px 2px 0px 0px rgba(0, 0, 0, .1), 3px 3px 0px 0px rgba(0, 0, 0, .072);
-  border-top : 1px solid rgba(0, 0, 0, .45);
+  box-shadow: inset -2px -2px 0px 0px rgba(255, 255, 255, .2), inset 2px 2px 0px 0px rgba(0, 0, 0, .1), 3px 3px 0px 0px rgba(0, 0, 0, .072);
+  border-top: 1px solid rgba(0, 0, 0, .45);
   border-left: 1px solid rgba(0, 0, 0, .45);
-  padding    : 12px 10px 10px 12px;
+  padding: 12px 10px 10px 12px;
 }
 
 .demo .bx32::after {
@@ -427,12 +427,12 @@
 }
 
 .bx33 {
-  border       : 1px solid rgba(0, 0, 0, .4);
+  border: 1px solid rgba(0, 0, 0, .4);
   border-bottom: 1px solid rgba(0, 0, 0, .45);
-  border-right : 1px solid rgba(0, 0, 0, .45);
-  box-shadow   : inset 2px 2px 0px 0px rgba(255, 255, 255, .2), inset -2px -2px 0px 0px rgba(0, 0, 0, .1), -1px -1px 0px 0px rgba(0, 0, 0, 0.05), 1px 1px 0px 0px rgba(255, 255, 255, .1);
-  padding      : 10px;
-  background   : rgba(255, 255, 255, .1);
+  border-right: 1px solid rgba(0, 0, 0, .45);
+  box-shadow: inset 2px 2px 0px 0px rgba(255, 255, 255, .2), inset -2px -2px 0px 0px rgba(0, 0, 0, .1), -1px -1px 0px 0px rgba(0, 0, 0, 0.05), 1px 1px 0px 0px rgba(255, 255, 255, .1);
+  padding: 10px;
+  background: rgba(255, 255, 255, .1);
   border-radius: 7px;
 
   /*  */
@@ -442,21 +442,21 @@
 
 
 .bx34 {
-  border       : 1px solid rgba(0, 0, 0, .3);
+  border: 1px solid rgba(0, 0, 0, .3);
   border-bottom: 1px solid rgba(0, 0, 0, .35);
-  border-right : 1px solid rgba(0, 0, 0, .35);
-  box-shadow   : inset 1px 1px 0px 0px rgba(255, 255, 255, .2), inset -1px -1px 0px 0px rgba(0, 0, 0, .1);
-  background   : rgba(255, 255, 255, .1);
-  transition   : 0.05s;
+  border-right: 1px solid rgba(0, 0, 0, .35);
+  box-shadow: inset 1px 1px 0px 0px rgba(255, 255, 255, .2), inset -1px -1px 0px 0px rgba(0, 0, 0, .1);
+  background: rgba(255, 255, 255, .1);
+  transition: 0.05s;
   border-radius: 7px;
 }
 
 .bx34:active {
-  padding           : 6px 4px 4px 6px;
+  padding: 6px 4px 4px 6px;
   -webkit-box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, .05), inset -1px -1px 0px 0px rgba(255, 255, 255, .2);
-  -moz-box-shadow   : inset 1px 1px 0px 0px rgba(0, 0, 0, .05), inset -1px -1px 0px 0px rgba(255, 255, 255, .2);
-  box-shadow        : inset 1px 1px 0px 0px rgba(0, 0, 0, .05), inset -1px -1px 0px 0px (255, 255, 255, .2);
-  background        : rgba(0, 0, 0, .04);
+  -moz-box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, .05), inset -1px -1px 0px 0px rgba(255, 255, 255, .2);
+  box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, .05), inset -1px -1px 0px 0px (255, 255, 255, .2);
+  background: rgba(0, 0, 0, .04);
 }
 
 .demo .bx34::after {
@@ -464,30 +464,30 @@
 }
 
 .bx35 {
-  background   : #fffdfc;
+  background: #fffdfc;
   border-radius: 15px;
-  box-shadow   : 0px 0px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
 }
 
 .bx36 {
-  border       : 1px solid rgba(0, 0, 0, .5);
+  border: 1px solid rgba(0, 0, 0, .5);
   border-bottom: 1px solid rgba(0, 0, 0, .25);
-  border-right : 1px solid rgba(0, 0, 0, .25);
-  box-shadow   : 1px 1px 0px 0px rgba(255, 255, 255, 0.05), -2px -2px 0px 0px rgba(0, 0, 0, 0.01), inset 2px 2px 0px 0px rgba(0, 0, 0, 0.01);
-  background   : rgba(0, 0, 0, .05);
+  border-right: 1px solid rgba(0, 0, 0, .25);
+  box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.05), -2px -2px 0px 0px rgba(0, 0, 0, 0.01), inset 2px 2px 0px 0px rgba(0, 0, 0, 0.01);
+  background: rgba(0, 0, 0, .05);
   border-radius: 7px;
 }
 
 .bx37 {
-  background   : rgba(0, 0, 0, .4);
-  border       : 1px solid rgba(0, 0, 0, .5);
-  box-shadow   : 0px 3px 8px 2px rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, .4);
+  border: 1px solid rgba(0, 0, 0, .5);
+  box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
 }
 
 .bx38 {
   background-color: #f5f5f5;
-  box-shadow      : 0px 3px 8px 2px rgba(0, 0, 0, 0.25), inset 0px 1px 0px 0px rgba(211, 211, 209, 1), inset 0px -1px 0px 0px rgba(211, 211, 209, 1);
+  box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.25), inset 0px 1px 0px 0px rgba(211, 211, 209, 1), inset 0px -1px 0px 0px rgba(211, 211, 209, 1);
 
   border-top: 1px solid #b9babe, 0px 3px 8px 2px rgba(0, 0, 0, 0.25);
 }
@@ -498,14 +498,14 @@
 
 .bx40 {
   background: #fff;
-  border    : 1px solid #eee;
+  border: 1px solid #eee;
   box-shadow: rgba(0, 0, 0, 0.05)2px 2px 1px;
 }
 
 .bx41 {
-  background   : rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
   border-radius: 6px;
-  box-shadow   : 0px 15px 15px -15px rgb(227, 226, 228), 0px 0 15px -3px rgb(227, 226, 228);
+  box-shadow: 0px 15px 15px -15px rgb(227, 226, 228), 0px 0 15px -3px rgb(227, 226, 228);
 }
 
 .bx42 {
