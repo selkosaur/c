@@ -1,12 +1,25 @@
+import { getClassRules } from "./script/getstyle.js";
+import { makeEl } from "./script/utils.js";
+import { CodeTabPanel } from "./script/codetabpanel.js";
+
 const contentEl = document.querySelector(`#content`);
 var divs = document.querySelectorAll("#content > div");
 for (var i = 0; i < divs.length; i++) {
   let div = divs[i];
   let num = i + 1;
-  div.classList.add("bx" + num);
-  let ct = document.querySelector(".boxcount");
-  ct.innerHTML = divs.length;
+  const bxLabel = `bx${num}`;
+  div.classList.add(bxLabel);
+  const classRules = getClassRules(bxLabel).trim();
+
+  if (!classRules) continue;
+  const clone = div.cloneNode(true);
+  const widg = new CodeTabPanel(bxLabel, clone, classRules);
+  const el = widg.create();
+  div.replaceWith(el);
 }
+let ct = document.querySelector(".boxcount");
+ct.innerHTML = divs.length;
+
 const scbsectionheader = makeEl("h1", {
   innerhtml: "scb",
   classlist: "section-header",
@@ -22,56 +35,27 @@ const dummytext = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       `;
 const uniquenames = ["skinny", "trackslider"];
 uniquenames.forEach((scrollbar) => {
+  const className = `scb-${scrollbar}`;
+  const ruleText = getClassRules(className).trim();
+
   const div = makeEl("div", {
     innerhtml: `${dummytext}`,
     classlist: `scb-${scrollbar}`,
   });
-  scrollbardivs.push(div);
+  const widg = new CodeTabPanel(scrollbar, div, ruleText);
+  const el = widg.create();
+
+  scrollbardivs.push(el);
 });
 for (let x = 0; x < 15; x++) {
+  const scrollbar = `scb${x + 1}`;
+  const ruleText = getClassRules(scrollbar).trim();
   const div = makeEl("div", {
     innerhtml: `${dummytext}`,
-    classlist: `scb${x + 1}`,
+    classlist: scrollbar,
   });
-  scrollbardivs.push(div);
+  const widg = new CodeTabPanel(scrollbar, div, ruleText);
+  const el = widg.create();
+  scrollbardivs.push(el);
 }
 contentEl.append(scbsectionheader, ...scrollbardivs);
-
-/**
- *
- * @param {keyof HTMLElementTagNameMap} tagname tag name for the element
- * @param {{classlist:string,innerhtml:string,cssprops:{string:string},attribs:{string:string}}} options
- * @returns
- */
-export function makeEl(tagname, options) {
-  if (!tagname) {
-    console.error("no element type specified");
-    return;
-  }
-  /**
-   * @type {HTMLElement}
-   */
-  let el = document.createElement(tagname);
-  if (!options) return el;
-
-  if (options.classlist) {
-    el.classList.add(
-      ...options.classlist
-        .split(" ")
-        .map((str) => str.trim())
-        .filter((str) => str)
-    ); // for the classlist string, separate by spaces, then trim each, then filter out any blanks
-  }
-  options.innerhtml ? (el.innerHTML = options.innerhtml) : "";
-  if (options.cssprops) {
-    Object.entries(options.cssprops).map((pair) => {
-      el.style.setProperty(pair[0], pair[1]);
-    });
-  }
-  if (options.attribs) {
-    Object.entries(options.attribs).map((pair) => {
-      el.setAttribute(pair[0], pair[1]);
-    });
-  }
-  return el;
-}

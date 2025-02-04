@@ -1,4 +1,8 @@
 /* just to set up the style page */
+:root {
+    box-sizing      : border-box;
+    interpolate-size: allow-keywords;
+}
 
 * {
     box-sizing     : border-box;
@@ -6,6 +10,7 @@
     transition     : 0.5s;
     font-size      : 0.9rem;
     scroll-behavior: smooth;
+
 }
 
 ::-webkit-scrollbar {
@@ -19,13 +24,14 @@ button {
 
 #content {
     display              : grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap                  : 4rem 3%;
     padding              : 1%;
     grid-template-rows   : auto;
 }
 
-#content>div {
+#content>div,
+#content .panel.preview>div {
     width          : 100%;
     min-height     : 200px;
     /* border      : 0.5px solid rgb(159, 159, 159); */
@@ -36,9 +42,21 @@ button {
 
 }
 
-#content>div::before {
+/* #content>[data-component] {
+    justify-content: start;
+} */
+
+#content>div::before,
+#content .panel.preview>div::before {
     content: attr(class);
 }
+
+/* #content>[data-label]::before {
+    content : attr(data-label);
+    position: absolute;
+    top     : 2px;
+    left    : 2px;
+} */
 
 #head {
     position           : fixed;
@@ -106,11 +124,21 @@ h1.section-header {
     color       : transparent;
 }
 
-#content>div[class^=scb] {
+#content>div[class^=scb],
+#content>[data-component] div[class^=scb] {
     overflow       : scroll;
     justify-content: start;
     max-height     : 200px;
 }
+
+[data-component] {
+    justify-self: baseline;
+    position    : relative;
+}
+
+/* #content>[data-component]:has(div[class^=scb]) {
+    max-height: 200px;
+} */
 
 nav a {
     display         : inline-block;
@@ -124,5 +152,182 @@ nav a {
 
     &:hover {
         background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+
+
+/* List of navigation items */
+.nav-list {
+    display  : flex;
+    flex-wrap: wrap;
+
+    align-self      : flex-end;
+    background-color: rgb(50, 50, 50, 0.5);
+    border-radius   : 1rem;
+    padding         : 0.2rem;
+    position        : relative;
+    z-index         : 10;
+}
+
+/* Navigation list item */
+.nav-item {
+    margin-inline-end: 0.2rem;
+    /* 8px */
+}
+
+.nav-item:last-child {
+    margin-inline-end: 0rem;
+}
+
+/* Link in the navigation menu */
+.nav-link {
+    color       : white;
+    display     : inline-flex;
+    padding     : 0.2rem 0.4rem;
+    border-width: 0px;
+    /* 16px */
+
+    border-color: transparent;
+
+    border-radius: 0.75rem;
+    align-items  : center;
+
+}
+
+:is(.nav-link, .code-copy)>svg {
+    height: 1.1rem;
+    width : 1.1rem;
+
+    &>* {
+        stroke-width: 2;
+    }
+}
+
+.nav-link:hover {
+
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Gray 600 */
+
+    /* Gray 300 */
+}
+
+
+
+/* Active link */
+.nav-link.active {
+
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* Disabled link */
+.nav-link.disabled {
+    color : #9ca3af;
+    /* Gray 400 */
+    cursor: not-allowed;
+}
+
+.nav-link.disabled.dark-mode {
+    color: #6b7280;
+    /* Gray 500 in dark mode */
+}
+
+:where(ul) {
+    list-style-type: none;
+    margin         : 0;
+    padding        : 0;
+}
+
+:where(button) {
+    background-color: inherit;
+    border          : 0px solid transparent;
+}
+
+:where(pre) {
+    margin: 0;
+}
+
+.panel-container,
+.panel {
+    width  : 100%;
+    display: flex;
+    flex   : 1;
+}
+
+.panel {
+    padding          : 0.25rem;
+    max-height       : 200px;
+    -webkit-animation: fadeEffect 0.15s;
+    animation        : fadeEffect 0.15s;
+}
+
+.panel .code-copy {
+    transition      : background-color 0.2s, border-color 0.2s;
+    border-radius   : 1rem;
+    font-size       : smaller;
+    color           : white;
+    background-color: #ffffff37;
+    border          : 1.5px solid rgba(255, 255, 255, 0.495);
+    padding         : 0.5em 0.7em;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+
+
+    &:hover {
+        background-color: #ffffff06;
+        border-color    : rgba(255, 255, 255, 0.7);
+    }
+}
+
+.panel pre {
+    padding       : 0.5rem;
+    border-radius : 1rem;
+    text-wrap-mode: wrap;
+    word-break    : break-word;
+}
+
+.panel pre code {
+    max-width : 100%;
+    word-break: break-word;
+}
+
+.panel code,
+.panel pre code * {
+    font-family: 'Fira Code', Consolas, monospace;
+    font-size  : 0.8rem;
+
+    &::selection {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+}
+
+.panel .code-content>pre {
+    height             : inherit;
+    overflow-y         : auto;
+    overscroll-behavior: contain;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
